@@ -1,3 +1,4 @@
+import 'package:best_friend_finder/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -322,7 +323,13 @@ class _IntroScreensState extends State<IntroScreens>
                         type: MaterialType.transparency,
                         child: lastPage
                             ? ElevatedButton(
-                                onPressed: widget.onDone as void Function()?,
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => LoginPage()),
+                                  );
+                                },
                                 style: ElevatedButton.styleFrom(
                                   backgroundColor: const Color(0xfff25c93),
                                   shape: RoundedRectangleBorder(

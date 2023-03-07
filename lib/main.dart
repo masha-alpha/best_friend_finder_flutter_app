@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:best_friend_finder/intro_screen/introd_screen.dart';
 import 'package:best_friend_finder/intro_screen/introd_screens.dart';
+import 'package:best_friend_finder/login_screen.dart';
 
 void main() => runApp(MyApp());
 
