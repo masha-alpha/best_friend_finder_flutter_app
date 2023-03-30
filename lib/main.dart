@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:best_friend_finder/intro_screen/introd_screen.dart';
 import 'package:best_friend_finder/intro_screen/introd_screens.dart';
 import 'package:best_friend_finder/login_screen.dart';
+import 'package:best_friend_finder/home_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: MyHomePage(),
+        home: const HomePage(),
         debugShowCheckedModeBanner: false,
       );
 }
@@ -32,6 +33,7 @@ class MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         ),
       ),
       onSkip: () => print('Skipping the intro slides'),
+
       footerBgColor: const Color(0xfff25c93),
       activeDotColor: const Color(0xfff25c93),
       footerRadius: 35.0,

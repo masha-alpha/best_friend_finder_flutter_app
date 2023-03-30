@@ -50,6 +50,12 @@ dev_dependencies:
 
   smooth_page_indicator: ^1.0.1
   google_fonts: ^4.0.3
+  geolocator: ^9.0.2
+  geocoding: ^2.1.0
+  provider: ^6.0.5
+  flutter_card_swiper: ^4.1.0+2
+  location: ^4.4.0
+  permission_handler: ^10.2.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -84,6 +90,9 @@ flutter:
     - assets/pic17.png
     - assets/pic18.png
     - assets/pic19.jpg
+    - assets/pic20.jpg
+    - assets/pic21.jpg
+    - assets/pic22.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

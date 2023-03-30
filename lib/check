@@ -1,0 +1,38 @@
+// bottomNavigationBar: BottomNavigationBar(
+//   selectedLabelStyle: TextStyle(fontSize: 0),
+//   unselectedLabelStyle: TextStyle(fontSize: 0),
+//   selectedFontSize: 0,
+//   unselectedFontSize: 0,
+//   iconSize: 20,
+//   elevation: 0,
+//   ignore: prefer_const_literals_to_create_immutables
+//   items: [
+//     BottomNavigationBarItem(
+//       icon: Icon(
+//         Icons.home_filled,
+//         color: Color(0xfff25c93),
+//       ),
+//       label: '',
+//     ),
+//     BottomNavigationBarItem(
+//       icon: Icon(
+//         CupertinoIcons.heart_fill,
+//         color: Color(0xffd3e8f4),
+//       ),
+//       label: '',
+//     ),
+//     BottomNavigationBarItem(
+//       icon: Icon(
+//         CupertinoIcons.chat_bubble_text_fill,
+//         color: Color(0xffd3e8f4),
+//       ),
+//       label: '',
+//     ),
+//     BottomNavigationBarItem(
+//       icon: Icon(
+//         Icons.person,
+//         color: Color(0xffd3e8f4),
+//       ),
+//       label: '',
+//     ),
+//   ]),

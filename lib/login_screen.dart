@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:best_friend_finder/sign_up_page.dart';
+import 'package:best_friend_finder/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF25C93),
+      backgroundColor: const Color(0xffF25C93),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(height: 40),
-            Text(
+            const SizedBox(height: 40),
+            const Text(
               'Welcome back!',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -19,10 +21,10 @@ class LoginPage extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(40),
@@ -30,12 +32,12 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(32),
+                  padding: const EdgeInsets.all(32),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      SizedBox(height: 40),
-                      Text(
+                      const SizedBox(height: 40),
+                      const Text(
                         'Sign in to your account',
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -44,7 +46,7 @@ class LoginPage extends StatelessWidget {
                           color: Color(0xff29284f),
                         ),
                       ),
-                      SizedBox(height: 40),
+                      const SizedBox(height: 40),
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -53,20 +55,20 @@ class LoginPage extends StatelessWidget {
                               color: Colors.grey.withOpacity(0.5),
                               spreadRadius: 2,
                               blurRadius: 7,
-                              offset:
-                                  Offset(0, 3), // changes position of shadow
+                              offset: const Offset(
+                                  0, 3), // changes position of shadow
                             ),
                           ],
-                          borderRadius: BorderRadius.all(
+                          borderRadius: const BorderRadius.all(
                             Radius.circular(20),
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(16),
+                          padding: const EdgeInsets.all(16),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              SizedBox(height: 10),
+                              const SizedBox(height: 10),
                               Text(
                                 'Email',
                                 style: TextStyle(
@@ -90,7 +92,7 @@ class LoginPage extends StatelessWidget {
                                 ),
                               ),
                               Divider(color: Colors.grey[400]),
-                              SizedBox(height: 10),
+                              const SizedBox(height: 10),
                               Text(
                                 'Password',
                                 style: TextStyle(
@@ -117,17 +119,23 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xff29284f),
                           borderRadius: BorderRadius.all(
                             Radius.circular(20),
                           ),
                         ),
                         child: TextButton(
-                          onPressed: () {},
-                          child: Padding(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const HomePage()),
+                            );
+                          },
+                          child: const Padding(
                             padding: EdgeInsets.all(16),
                             child: Text(
                               'Sign In',
@@ -139,11 +147,11 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Center(
                         child: GestureDetector(
                           onTap: () {},
-                          child: Text(
+                          child: const Text(
                             'ForgotPassword?',
                             style: TextStyle(
                               color: Color(0xff29284f),
@@ -152,7 +160,7 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -163,10 +171,16 @@ class LoginPage extends StatelessWidget {
                               fontSize: 16,
                             ),
                           ),
-                          SizedBox(width: 10),
+                          const SizedBox(width: 10),
                           GestureDetector(
-                            onTap: () {},
-                            child: Text(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const SignUpScreen()),
+                              );
+                            },
+                            child: const Text(
                               'Sign Up',
                               style: TextStyle(
                                 color: Color(0xff29284f),
